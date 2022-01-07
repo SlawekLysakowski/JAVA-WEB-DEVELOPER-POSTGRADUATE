@@ -1,23 +1,22 @@
 public class Lab7PartTwo {
     public static void main(String[] args) {
 
-        String bin = "10111";
-        int d = bin.length();
-        double result = 0;
+        String binary = "11";
+        long result = 0;
 
-        for(int i=0;i<bin.length();i++) {
-            if (bin.charAt(i) == '1') {
-                result = result + Math.pow(2, bin.length() - 1 - i);
+
+        for(int i=0;i<binary.length();i++) {
+            int reverseIndex = binary.length() - 1 - i;
+            char c = binary.charAt(reverseIndex);
+            int bit = Character.getNumericValue(c);
+            result += bit * (int)Math.pow(2,i); // bit * 2 ^ i
             }
+        System.out.println("Binarnie " + binary + " to " + result + " dziesiętnie");
         }
 
-//            result += bin.charAt(d - 1) == '1' ? 1 : 0;
-//            result += bin.charAt(d - 2) == '1' ? 2 : 0;
-//            result += bin.charAt(d - 3) == '1' ? 4 : 0;
-//            result += bin.charAt(d - 4) == '1' ? 8 : 0;
-        long finalResult = (long)result;
-        System.out.println(finalResult);
+
+//        System.out.println(result);
         }
-    }
+
 
 

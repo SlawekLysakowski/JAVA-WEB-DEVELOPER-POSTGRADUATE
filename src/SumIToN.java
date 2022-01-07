@@ -12,6 +12,15 @@ public class SumIToN {
 
         System.out.println(n);
 
+        System.out.print("Suma 1");
+        while (number < n) {
+            number ++;
+            sum += number;
+            System.out.print(" + " + number);
+        }
+        System.out.println(" = " + sum);
+
+        System.out.println(n);
 
 
     }
