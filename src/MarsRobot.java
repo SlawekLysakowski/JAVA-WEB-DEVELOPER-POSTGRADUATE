@@ -8,7 +8,7 @@ public class MarsRobot {
         this.speed = speed;
         this.temperature = temperature;
 
-        MarsRobot marsRobot = new MarsRobot("misja specjalna", 5, 20);
+//        MarsRobot marsRobot = new MarsRobot("misja specjalna", 5, 20);
 
 
     }
